@@ -1,0 +1,115 @@
+/* HEADER STYLE */
+header {
+  padding: 0 50px;
+  height: 125px;
+}
+.enterprise-logo {
+  width: 210px;
+}
+/* --- */
+
+html {
+  overflow-x: hidden;
+}
+
+/* MAIN STYLE */
+main {
+  margin-top: -125px;
+  height: 100vh;
+}
+.login-content .flex-column {
+  width: 50vw;
+}
+.login-illustration {
+  width: 500px;
+}
+/* MAIN FORM STYLE */
+.login-container {
+  text-align: center;
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: fadeAnimation 1s ease forwards;
+}
+.login-container h1 {
+  font-family: 'moniker b', sans-serif;
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.login {
+  width: 350px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+.login__field {
+  font-family: 'moniker', sans-serif;
+  padding-left: 13px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid #cacaca;
+}
+#login__btn {
+  font-family: 'moniker b', sans-serif;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 700;
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: fadeAnimation 1s .3s ease forwards;
+}
+.login__reset-pword {
+  font-family: 'moniker', sans-serif;
+  color: #808080;
+}
+/* --- */
+/* --- */
+
+/* KEYFRAMES */
+@keyframes fadeAnimation {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* --- */
+
+/* MEDIA */
+@media (max-width: 500px) {
+  
+}
+@media (max-width: 650px) {
+  .login-illustration {
+    width: 85vw;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    height: unset;
+    margin: unset;
+  }
+  div#login-flex {
+    flex-direction: column-reverse;
+    align-items: unset;
+  }
+  div#login-flex .flex-column {
+    width: 100vw;
+    margin: 30px 0;
+  }
+}
+/* --- */

@@ -1,0 +1,120 @@
+@media (max-width: 1135px) {
+  header {
+    display: block !important;
+  }
+  div.infor-container {
+    margin-top: 125px;
+  }
+  aside {
+    right: -251px;
+    box-shadow: 0 0 10px #00000020;
+    transition: .4s ease;
+  }
+  aside .enterprise-logo {
+    display: none;
+  }
+  div.infor-side {
+    margin: 0;
+    width: 100vw;
+  }
+  div.infor-container {
+    width: 80vw;
+  }
+}
+@media (max-width: 1100px) {
+  div.user-status {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: unset;
+    gap: 20px;
+  }
+  div.user-status__item {
+    width: 100%;
+  }
+}
+@media (max-width: 875px) {
+  div.simulator-grid {
+    grid-template-columns: auto;
+  }
+  input#desired-value {
+    width: 70vw;
+  }
+}
+@media (max-width: 700px) {
+  .links-content .main {
+    text-align: center;
+  }
+  table.requests-table td {
+    border: none;
+  }
+  table.requests-table.desktop {
+    display: none;
+  }
+  table.requests-table.mobile {
+    display: block;
+  }
+  div.filter-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div.filter-header fieldset {
+    margin: 5px 0;
+  }
+  .infor-container h1 {
+    font-size: 23px !important;
+  }
+  .infor-container h2 {
+    font-size: 13px !important;
+  }
+  .infor-container p {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 585px) {
+  div.user-status {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 500px) {
+  div.login-container h1 {
+    font-size: 30px;
+  }
+  form.login {
+    width: 80vw;
+  }
+  input#surgery-value {
+    width: 100%;
+  }
+  .infor-container div.main {
+    padding: 10px 15px;
+  }
+  div.login {
+    width: 300px;
+  }
+  input#link {
+    width: 100%;
+  }
+  a.send-link-btn {
+    width: 80%;
+  }
+  .save-area button {
+    font-size: 15px;
+    width: 80% !important;
+  }
+  a.send-data {
+    padding: 0 30px;
+  }
+  .simulation-result b {
+    display: unset !important;
+  }
+  div.simulator-grid {
+    gap: 0;
+  }
+  span.simulation-result {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .simulator-grid .flex {
+    flex-direction: column;
+  }
+}

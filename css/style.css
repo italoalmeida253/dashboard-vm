@@ -1,0 +1,49 @@
+/* RESET BROWSER VALUES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 100%;
+}
+/* --- */
+
+/* IMPORT EXTERNAL FONTS */
+@font-face {
+  font-family: 'moniker';
+  src: url(../fonts/moniker/Moniker-Regular.ttf);
+}
+@font-face {
+  font-family: 'moniker b';
+  src: url(../fonts/moniker/Moniker-Bold.ttf);
+}
+/* --- */
+
+/* BODY STYLE */
+body {
+  background-image: linear-gradient(to right, #fff, #ededed);
+}
+/* --- */
+
+/* ROOT */
+:root {
+  --primary-color: #009b9b;
+  --secondary-color: #5ec087;
+  --shadow-color: #00000013;
+}
+/* --- */
+
+/* FLEX CLASSES */
+.flex {display: flex;}
+.flex--d-column {flex-direction: column;}
+.flex--ai-center {align-items: center;}
+.flex--jc-sbetween {justify-content: space-between;}
+.flex--jc-center {justify-content: center;}
+/* --- */
+
+/* SPECIAL CLASSES */
+.max-height {height: 100%;}
+.ta-center {text-align: center;}
+.ta-right {text-align: right;}
+.height-fc {height: fit-content;}
+/* --- */

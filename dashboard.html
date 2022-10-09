@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- --- -->
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- --- -->
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="flex flex--jc-sbetween flex--ai-center">
+      <div class="flex-column">
+        <img src="img/vemmoney-logo.svg" alt="" class="enterprise-logo">
+      </div>
+      <div class="flex-column">
+        <div class="menu-btn" onclick="showAsideMenu()">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="flex flex--jc-column">
+      <div class="flex-column">
+        <aside>
+          <div class="flex flex--d-column flex--jc-sbetween flex--ai-center max-height">
+            <div class="flex-column">
+              <img src="img/vemmoney-logo.svg" alt="Vem Money" class="enterprise-logo">
+            </div>
+
+            <div class="flex-column">
+              <span class="welcome-msg">
+                Olá, Breno!
+                
+              </span>
+              <ul class="infor-selection">
+                <li class="infor-selection__item selected">
+                  <i class="bi bi-person-lines-fill infor-selection__icon"></i>
+                  Cadastro
+                </li>
+                <li class="infor-selection__item dropdown-item" onclick="showDropdownMenu()">
+                  <i class="bi bi-plus infor-selection__icon"></i>
+                  Solicitações
+                </li>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item" onclick="changeInfor(1)">Em andamento</li>
+                  <li class="dropdown-menu__item" onclick="changeInfor(1.2)">Controle de Pagamentos</li>
+                </ul>
+                <li class="infor-selection__item teste">
+                  <i class="bi bi-play-fill infor-selection__icon"></i>
+                  Simulador
+                </li>
+                <li class="infor-selection__item">
+                  <i class="bi bi-link infor-selection__icon"></i>
+                  Link para paciente
+                </li>
+                <li class="infor-selection__item">
+                  <i class="bi bi-question infor-selection__icon infor-selection__icon"></i>
+                  Dúvidas/FAQ
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-column">
+              <a href="#" id="add-accesses">Cadastrar acessos</a>
+              <input type="button" value="Logout" id="logout-btn">
+            </div>
+
+          </div>
+        </aside>
+      </div>
+      <div class="flex-column infor-side flex--jc-center flex--ai-center flex">
+        <div class="infor-container">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
